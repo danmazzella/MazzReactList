@@ -1,0 +1,37 @@
+{
+  "name": "mazz-react-list",
+  "version": "0.1.14",
+  "private": false,
+  "dependencies": {
+    "@material-ui/core": "^4.10.2",
+    "@material-ui/icons": "^4.9.1",
+    "clsx": "^1.1.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1"
+  },
+  "main": "dist/ListBody.js",
+  "scripts": {
+    "publish:npm": "rm -rf dist && mkdir dist &&  babel src -d dist --copy-files"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-transform-arrow-functions"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-transform-arrow-functions": "^7.10.1",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.10.1"
+  }
+}
